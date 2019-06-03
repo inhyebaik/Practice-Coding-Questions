@@ -32,7 +32,7 @@ class Node(object):
             if curr.value == value:
                 return curr
             else:
-                to_visit.extendleft(curr.children)
+                to_visit.extend(curr.children)
         return None
 
 

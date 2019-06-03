@@ -11,6 +11,13 @@ def binary_search(alist, target):
             lo = mid + 1
     return False
 
+def binary_search2(alist, target):
+    if len(alist) == 0:
+        return False
+    elif len(alist) == 1:
+        return alist.pop() == target
+
+    mid = len(alist) // 2
 
 import unittest
 class Tests(unittest.TestCase):
